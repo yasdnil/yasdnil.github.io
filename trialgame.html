@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        //    for(var i = 0; i <11; i++){
+            //console.log(Math.floor(Math.random()*5));
+
+        //    }
+
+            var ships = [0, 0, 0, 0, 0];
+
+
+            //only comment out either A or B. if you commment out both, one will get overriden
+           //a 
+            //ships[Math.floor(Math.random()*5)] = 1; //make the computer smart
+            
+            //b
+            ships[4] = 1; // default bomb is at 4
+
+            
+            var fact = true;
+            var counter = 0;
+            while(fact){
+           //     ships[Math.floor(Math.random()*5)] = 1; //to make the computer super smart
+
+                var user = prompt("enter a number from 0-4");
+                counter++;
+                if(ships[user] == 1){
+                    console.log("you win it took you "+ counter +" tries");
+                    fact = false;
+                }else{
+                    alert("try again");
+                }
+
+            }
+           
+
+
+            // console.log(ships);
+           
+        </script>
+    </body>
+</html>
